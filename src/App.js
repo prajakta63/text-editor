@@ -1,10 +1,20 @@
+import React from "react";
 import "./styles.css";
+import Title from "./components/Title";
+import DraftEditor from "./components/DraftEditor";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div
+      style={{
+        width: "80%",
+        margin: "0 auto",
+        padding: "20px",
+        border: "1px solid #ddd",
+      }}
+    >
+      <Title />
+      <DraftEditor />
     </div>
   );
 }
